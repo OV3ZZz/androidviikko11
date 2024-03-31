@@ -18,9 +18,9 @@ public class GroceryViewHolder extends RecyclerView.ViewHolder {
 
     public GroceryViewHolder(@NonNull View itemView) {
         super(itemView);
-        txtGroceryName = itemView.findViewById(R.id.txtGroceryName);
-        txtGroceryNote = itemView.findViewById(R.id.txtGroceryNote);
-        imageDelete = itemView.findViewById(R.id.imgRemove);
+        txtGroceryName = itemView.findViewById(R.id.textGroceryName);
+        txtGroceryNote = itemView.findViewById(R.id.textGroceryNote);
+        imageDelete = itemView.findViewById(R.id.imageDelete);
         imageEdit = itemView.findViewById(R.id.imageEdit);
         editTextGroceryNote = itemView.findViewById(R.id.editTextGroceryNote);
     }

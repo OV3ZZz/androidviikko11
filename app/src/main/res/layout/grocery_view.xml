@@ -15,14 +15,14 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txtGroceryName"
+            android:id="@+id/textGroceryName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tuotteen nimi"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txtGroceryNote"
+            android:id="@+id/textGroceryNote"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Note" />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imgRemove"
+            android:id="@+id/imageDelete"
             android:layout_width="30dp"
             android:layout_height="30dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgRemove"
+            app:layout_constraintTop_toBottomOf="@+id/imageDelete"
             android:src="@drawable/edit" />
 
         <EditText
