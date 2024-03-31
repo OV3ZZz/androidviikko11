@@ -18,7 +18,7 @@ public class Grocery {
         return groceryName;
     }
 
-    public String getGroceryNote() {
+    public String getNote() {
         return groceryNote;
     }
 
