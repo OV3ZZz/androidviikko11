@@ -28,10 +28,6 @@ public class Grocery {
         this.id = id;
     }
 
-    public String getId() {
-        return id;
-    }
-
     public void setGroceryNote(String groceryNote) {
         this.groceryNote = groceryNote;
     }
