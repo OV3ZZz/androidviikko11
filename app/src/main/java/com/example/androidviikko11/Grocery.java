@@ -14,7 +14,7 @@ public class Grocery {
         this.timeAdded = System.currentTimeMillis();
     }
 
-    public String getGroceryName() {
+    public String getName() {
         return groceryName;
     }
 

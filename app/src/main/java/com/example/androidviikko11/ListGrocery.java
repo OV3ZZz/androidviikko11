@@ -34,7 +34,7 @@ public class ListGrocery extends AppCompatActivity {
     public void removeGrocery(String name) {
         Grocery groceryToRemove = null;
         for (Grocery grocery : groceries) {
-            if (grocery.getGroceryName().equals(name)) {
+            if (grocery.getName().equals(name)) {
                 groceryToRemove = grocery;
                 break;
             }
@@ -46,7 +46,7 @@ public class ListGrocery extends AppCompatActivity {
 
 
     public void sortGroceriesByAlphabet() {
-        groceries.sort(Comparator.comparing(Grocery::getGroceryName));
+        groceries.sort(Comparator.comparing(Grocery::getName));
     }
 
     public void sortGroceriesByTime() {

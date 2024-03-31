@@ -29,7 +29,7 @@ public class GroceryListAdapter extends RecyclerView.Adapter<GroceryViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull GroceryViewHolder holder, int position) {
         Grocery grocery = groceries.get(position);
-        holder.txtGroceryName.setText(grocery.getGroceryName());
+        holder.txtGroceryName.setText(grocery.getName());
         holder.txtGroceryNote.setText(grocery.getGroceryNote());
 
         holder.imageEdit.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +52,7 @@ public class GroceryListAdapter extends RecyclerView.Adapter<GroceryViewHolder> 
             @Override
             public void onClick(View v) {
                 // Remove grocery from the list
-                String name = grocery.getGroceryName();
+                String name = grocery.getName();
                 ListGrocery.getInstance().removeGrocery(name);
                 notifyDataSetChanged();
             }
