@@ -44,6 +44,15 @@ public class ListGrocery extends AppCompatActivity {
         }
     }
 
+    public Grocery getGroceryByName(String name) {
+        for (Grocery grocery : groceries) {
+            if (grocery.getName().equals(name)) {
+                return grocery;
+            }
+        }
+        return null;
+    }
+
 
     public void sortGroceriesByAlphabet() {
         groceries.sort(Comparator.comparing(Grocery::getName));
