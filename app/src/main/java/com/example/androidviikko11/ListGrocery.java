@@ -22,10 +22,6 @@ public class ListGrocery extends AppCompatActivity {
         return listGrocery;
     }
 
-    public Grocery getGroceryByIdWithoutRemove(int id) {
-        return groceries.get(id);
-    }
-
 
     public ArrayList<Grocery> getGroceries() {
         return groceries;
@@ -33,6 +29,19 @@ public class ListGrocery extends AppCompatActivity {
 
     public void addGrocery(Grocery grocery) {
         groceries.add(grocery);
+    }
+
+    public void removeGrocery(String name) {
+        Grocery groceryToRemove = null;
+        for (Grocery grocery : groceries) {
+            if (grocery.getGroceryName().equals(name)) {
+                groceryToRemove = grocery;
+                break;
+            }
+        }
+        if (groceryToRemove != null) {
+            groceries.remove(groceryToRemove);
+        }
     }
 
 

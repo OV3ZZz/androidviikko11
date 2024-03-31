@@ -52,7 +52,8 @@ public class GroceryListAdapter extends RecyclerView.Adapter<GroceryViewHolder> 
             @Override
             public void onClick(View v) {
                 // Remove grocery from the list
-                groceries.remove(position);
+                String name = grocery.getGroceryName();
+                ListGrocery.getInstance().removeGrocery(name);
                 notifyDataSetChanged();
             }
         });

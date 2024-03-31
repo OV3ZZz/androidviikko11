@@ -6,8 +6,6 @@ public class Grocery {
 
     protected long timeAdded;
 
-    protected String id;
-
     private String groceryNote;
 
     public Grocery(String groceryName, String groceryNote) {
@@ -22,10 +20,6 @@ public class Grocery {
 
     public String getGroceryNote() {
         return groceryNote;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public void setGroceryNote(String groceryNote) {
